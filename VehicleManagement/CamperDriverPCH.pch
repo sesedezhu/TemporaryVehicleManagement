@@ -1,0 +1,70 @@
+//
+//  CamperPCH.pch
+//  Camper
+//
+//  Created by liu on 16/9/16.
+//  Copyright © 2016年 ning. All rights reserved.
+//
+
+#ifndef CamperPCH_pch
+#define CamperPCH_pch
+
+#ifdef __OBJC__
+
+#import "UIColor+LNCustomColorSkill.h"
+#import "UIView+LNCustomeMethodSkill.h"
+#import "UIViewController+LNCustomSkills.h"
+#import "NSDate+LNCustomSkills.h"
+#import "UIButton+LNCustomSkill.h"
+#import "LNColorDesinger.h"
+#import "ShortuctKeyForMethod.h"
+#import "Masonry.h"
+#import "Cooly.h"
+#import "NSString+LNCustomSkill.h"
+#import "WorldPathConfigure.h"
+#import "PostManWayConfig.h"
+#import "PostManNormalWithRootParematers.h"
+#import "PostManNormalWithNORootParematers.h"
+#import "PostManWithChainedConnect.h"
+#import "LNMBProgressHUDSkill.h"
+#import "UserInfoSkills.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "WorldNotifyManager.h"
+#import "MJRefresh.h"
+#endif
+
+
+#pragma 登录地址
+///测试环境
+#define PostManTypeTest       @"http://192.168.101.115/houseTaxiAppServer";
+//#define PostManTypeTest       @"http://192.168.101.115//houseTaxiAppServer";//高露
+//#define PostManTypeTest       @"http://192.168.101.136:8080/houseTaxiAppServer";
+//#define PostManTypeTest       @"http://192.168.101.189:8081/houseTaxiAppServer";
+//#define PostManTypeTest       @"http://192.168.101.168:9080/houseTaxiAppServer";//智博
+//#define PostManTypeTest       @"http://192.168.101.109:8081/houseTaxiAppServer";
+//#define PostManTypeTest        @"http://192.168.101.133:8090/houseTaxiAppServer";//旺
+
+///开发环境
+#define PostManTypeDev          @"http://192.168.101.121:9082/houseTaxiAppService";//192.168.101.121AdministratorNaliwan2017$
+
+///正式环境
+#define PostManTypeReleaseWF    @"http://121.43.38.86:8080/houseTaxi";//老平台
+#define PostManTypeReleaseNLW   @"http://112.74.165.118:9082/houseTaxiService";//新平台
+
+//融云
+#define RONGYUNAPIKEY @"lmxuhwagl028d"
+
+//百度推送
+#define BDPUSHAPIKEY  @"AtjOeaMY0s5jFcslVGHgfoFc"
+
+//百度地图、导航
+#define BDMAPAPIKEY_CamperDriver    @"3lRY8qN3gegPPQuriD6M4dvXERo7rihx"
+#define BDMAPAPIKEY_VehicleDriver   @"nrgIl4UTLFX2qGefWy6gOGdmzcFVG0Zp"
+
+//蒲公英下载地址 司机端
+#define APPURL @"https://www.pgyer.com/HPs6"
+
+
+#endif
+

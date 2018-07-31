@@ -1,0 +1,101 @@
+//
+//  WorldPathConfigure.h
+//  Camper
+//
+//  Created by JobNewMac1 on 16/9/23.
+//  Copyright © 2016年 ning. All rights reserved.
+//
+
+#ifndef WorldPathConfigure_h
+#define WorldPathConfigure_h
+
+#define imageFile @"imageFile"
+
+
+//登录 司机
+#define DriverLogin_Path                @"/driver/login"
+
+//ChannelId
+#define SalesLoginChannelId             @"/sales/setChannelId"
+// 获取司机信息
+#define UserGetUserOrDriverInfo_Path    @"/user/getUserOrDriverInfo"
+
+//修改司机或销售用户信息
+#define UserUpdateUserOrDriver          @"/user/updateUserOrDriver"
+
+// 获取司机状态
+#define DriverOrderDriverStatus         @"/driver/order/driverStatus"
+
+//获取销售顾问或司机信息
+#define NoticeList                      @"/notice/list"
+
+//读通知后
+#define NoticeReadNotice                @"/notice/readNotice"
+
+//意见反馈/ 旧版
+#define OpinionSubmit                   @"/opinion/submit"
+//意见反馈/新版
+#define DriverOrderOpinionFeedback      @"/driver/order/opinionFeedback"
+
+//司机的行程 首页使用的,得到的全是可以抢到订单/
+#define DriverOrderList                 @"/driver/order/list"
+
+//司机的行程 订单详情
+#define DriverOrderFindTakeOrder        @"/driver/order/findTakeOrder"
+
+//已抢订单 行程页面使用的
+#define DriverOrderNowList              @"/driver/order/nowList"
+
+//更新车辆位置，改版后废弃，已不再使用
+#define UserRefreshCarLocal             @"/user/refreshCarLocal"
+
+//回传车辆位置
+#define SynchronReshCarLocal            @"/synchron/refreshCarLocal"
+
+//抢单
+#define DriverOrderRobOrder             @"/driver/order/robOrder"
+
+//行程开始
+#define DriverOrderStart                @"/driver/order/start"
+
+//行程结束
+#define DriverOrderFinish               @"/driver/order/finish"
+
+//司机还车
+#define UserGiveBack                    @"/user/giveBack"
+
+//司机设置回程
+#define UserSetUpBack                   @"/user/setUpBack"
+
+//账单
+#define BillMonth                       @"/bill/month"
+
+//司机签到
+#define DriverOrderSign                 @"/driver/order/sign"
+
+//司机总价
+#define DriverGetTotalRefuelCost        @"/driver/order/getTotalRefuelCost"
+
+//司机加油
+#define DriverOrderRefuel               @"/driver/order/refuel"
+
+//司机加油列表
+#define DriverOrderGetRefuelList        @"/driver/order/getRefuelList"
+
+//司机版本
+#define UserGetVersion                  @"/user/getVersion"
+
+//司机打卡
+#define DriverOrderClockIn              @"/driver/order/clockIn"
+
+//司机评价
+#define DriverOrderReview               @"/driver/order/review"
+
+//司机上传图片（加油/开始出车/结束出车）
+#define DriverOrderHandleFile           @"/driver/order/handleFile"
+
+//获取加油余额
+#define DriverOrderBackDate             @"/driver/order/backDate"
+
+
+#endif /* WorldPathConfigure_h */
