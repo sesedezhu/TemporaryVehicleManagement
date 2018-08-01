@@ -64,7 +64,11 @@
 
 //蒲公英下载地址 司机端
 #define APPURL @"https://www.pgyer.com/HPs6"
-
+/*--屏幕的宽高----*/
+#define kScreenWidth   ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight  ([UIScreen mainScreen].bounds.size.height)
+//以750为设计稿--原始高度为667
+#define CONVER_VALUE(x) ceil(kScreenWidth * x / 375)
 
 #endif
 

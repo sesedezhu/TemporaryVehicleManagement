@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MainBuildingController : UIViewController
-
+@property(nonatomic,copy)void(^textfield)(void);
 @end

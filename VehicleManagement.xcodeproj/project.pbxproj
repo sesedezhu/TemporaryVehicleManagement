@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106B84E22111526000D96F46 /* MessageHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B84DE2111526000D96F46 /* MessageHeadView.m */; };
+		106B84E32111526000D96F46 /* MessageCityChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B84DF2111526000D96F46 /* MessageCityChooseView.m */; };
 		8137D2EE210B0D6F0038CDA6 /* SendCarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8137D2EC210B0D6F0038CDA6 /* SendCarController.m */; };
 		8137D2EF210B0D6F0038CDA6 /* SendCarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8137D2ED210B0D6F0038CDA6 /* SendCarController.xib */; };
 		8137D2F5210B131D0038CDA6 /* SelectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8137D2F4210B131D0038CDA6 /* SelectListView.m */; };
@@ -141,6 +143,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		106B84DE2111526000D96F46 /* MessageHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHeadView.m; sourceTree = "<group>"; };
+		106B84DF2111526000D96F46 /* MessageCityChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCityChooseView.m; sourceTree = "<group>"; };
+		106B84E02111526000D96F46 /* MessageHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHeadView.h; sourceTree = "<group>"; };
+		106B84E12111526000D96F46 /* MessageCityChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCityChooseView.h; sourceTree = "<group>"; };
 		8137D2EB210B0D6F0038CDA6 /* SendCarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendCarController.h; sourceTree = "<group>"; };
 		8137D2EC210B0D6F0038CDA6 /* SendCarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendCarController.m; sourceTree = "<group>"; };
 		8137D2ED210B0D6F0038CDA6 /* SendCarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendCarController.xib; sourceTree = "<group>"; };
@@ -541,6 +547,10 @@
 		8166474F21086CDA00D65487 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				106B84E12111526000D96F46 /* MessageCityChooseView.h */,
+				106B84DF2111526000D96F46 /* MessageCityChooseView.m */,
+				106B84E02111526000D96F46 /* MessageHeadView.h */,
+				106B84DE2111526000D96F46 /* MessageHeadView.m */,
 				8166475D21086E6B00D65487 /* VersionView.h */,
 				8166475F21086E6B00D65487 /* VersionView.m */,
 				8166476021086E6B00D65487 /* VersionView.xib */,
@@ -1150,6 +1160,7 @@
 				816648912108727700D65487 /* NSData+ImageContentType.m in Sources */,
 				816648272108726400D65487 /* MJRefreshConst.m in Sources */,
 				816648542108727300D65487 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				106B84E22111526000D96F46 /* MessageHeadView.m in Sources */,
 				816648592108727300D65487 /* NSArray+MASAdditions.m in Sources */,
 				816647E92108725200D65487 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				816647A5210871B500D65487 /* LNMBProgressHUDSkill.m in Sources */,
@@ -1162,6 +1173,7 @@
 				816648302108726400D65487 /* MJRefreshAutoGifFooter.m in Sources */,
 				8166482A2108726400D65487 /* NSBundle+MJRefresh.m in Sources */,
 				816648352108726400D65487 /* MJRefreshFooter.m in Sources */,
+				106B84E32111526000D96F46 /* MessageCityChooseView.m in Sources */,
 				8166482E2108726400D65487 /* MJRefreshBackNormalFooter.m in Sources */,
 				8166476E21086E7700D65487 /* LeftSideViewBuilding.m in Sources */,
 				8166479121086F9B00D65487 /* UIButton+LNCustomSkill.m in Sources */,
