@@ -8,18 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectListView : UIView <UITableViewDelegate,UITableViewDataSource>
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+@interface SelectListView : UIView <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,CAAnimationDelegate,UISearchBarDelegate>
+#else
+@interface SelectListView : UIView <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+#endif
 
+{
+    CGRect btnRect;
+}
 @property (nonatomic , assign) CGFloat itemWidth;
 @property (nonatomic , assign) CGFloat itemHeight;
 @property (nonatomic , strong) UITableView *tbView;
 @property (nonatomic , strong) NSMutableArray *dataArray;
 @property (nonatomic , strong) NSMutableArray *KDataArray;
+@property (nonatomic , strong) UISearchBar *searchBarView;
 
-@property (nonatomic , strong) UITextField *tfView;
+
+@property (nonatomic ,strong) void (^selectObj)(NSString *string);
 
 + (SelectListView *)shareInstance;
-- (void)updataUIWith:(UIButton *)btn;
 - (void)updataUIWithBtn:(UIButton *)btn withDataArray:(NSArray *)array;
-
+- (BOOL)viewHiddenWithBtn:(UIButton*)btnl;
 @end
