@@ -29,79 +29,80 @@ static SelectListView *_singleton = nil ;
 //        self.itemWidth = frame.size.width;
 //        [self addSubview:self.tfView];
 //        [self addSubview:self.tbView];
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor colorWithWhite:0.3 alpha:1.0];
     }
     return self;
 }
 
-
-- (void)updataUIWith:(UIButton *)btn{
+//判断是否隐藏
+- (BOOL)viewHiddenWithBtn:(UIButton*)btn{
     
-    CGFloat vy = btn.frame.origin.y + btn.frame.size.height;
-    if ( self && self.frame.origin.y == vy) {
-        self.hidden = !self.hidden;
-    }else{
-        if (self.isHidden) {
-            self.hidden = NO;
-        }
-        self.itemHeight = btn.frame.size.height;
-        self.itemWidth = btn.frame.size.width;
-        [self addSubview:self.tfView];
-        [self addSubview:self.tbView];
-        
-        self.tbView.frame = CGRectMake(0, self.itemHeight, self.itemWidth, self.itemHeight * 10);
-        self.frame = CGRectMake(btn.frame.origin.x, vy, btn.frame.size.width, btn.frame.size.height * 11);
-        
-        [btn.superview addSubview:self];
-        
-        
-        
-        [self.tbView reloadData];
+    if (!self) {
+        return NO;
     }
+    if (self.frame.origin.y == btn.frame.origin.y + btn.frame.size.height) {
+        self.hidden = !self.hidden;
+        
+        if (!self.hidden) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }
+    
+    return YES;
 }
 
 - (void)updataUIWithBtn:(UIButton *)btn withDataArray:(NSArray *)array{
     
-    CGFloat vy = btn.frame.origin.y + btn.frame.size.height;
-    if ( self && self.frame.origin.y == vy) {
-        self.hidden = !self.hidden;
-    }else{
+//    if ( self && self.frame.origin.y == btn.frame.origin.y + btn.frame.size.height) {
+//        self.hidden = !self.hidden;
+//    }else{
+    
+    if ([self viewHiddenWithBtn:btn]) {
+        
         if (self.isHidden) {
             self.hidden = NO;
         }
         self.itemHeight = btn.frame.size.height;
         self.itemWidth = btn.frame.size.width;
-        [self addSubview:self.tfView];
+        btnRect = btn.frame;
         [self addSubview:self.tbView];
-        self.frame = CGRectMake(btn.frame.origin.x, vy, btn.frame.size.width, self.itemHeight * 11);
         [btn.superview addSubview:self];
         
-        self.tbView.frame = CGRectMake(0, self.itemHeight, self.itemWidth, self.itemHeight * 10);
-        self.frame = CGRectMake(btn.frame.origin.x, vy, btn.frame.size.width, btn.frame.size.height * 11);
+        self.dataArray = [array mutableCopy];
+        self.KDataArray = [array mutableCopy];
         
-        [btn.superview addSubview:self];
-        
-        
-        
-        [self.tbView reloadData];
+        [self updataTableViewDataWithString:@""];
     }
 }
 
-- (void) updataData{
+- (void) updataTableViewDataWithString:(NSString *)text{
     
-    if (self.tfView.text.length > 0) {
+    if (text.length > 0) {
         
         [self.KDataArray removeAllObjects];
-        
-        
+        for (int i = 0; i < self.dataArray.count; i++) {
+
+            if ([self.dataArray[i] rangeOfString:text].location != NSNotFound) {
+                [self.KDataArray addObject:self.dataArray[i]];
+            }
+        }
     }else{
         self.KDataArray = [self.dataArray mutableCopy];
     }
+    
+    NSInteger numCell = self.KDataArray.count>=6?6:self.KDataArray.count;
+    numCell = numCell<6?6:numCell;
+    self.tbView.frame = CGRectMake(0,0, self.itemWidth, self.itemHeight * numCell);
+    self.frame = CGRectMake(btnRect.origin.x, btnRect.origin.y + btnRect.size.height, self.itemWidth, self.itemHeight * numCell);
+    
+    [self.tbView reloadData];
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return self.KDataArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -110,9 +111,11 @@ static SelectListView *_singleton = nil ;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:slCell];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:slCell];
+        cell.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.1];
+        cell.textLabel.textColor = [UIColor whiteColor];
     }
     cell.textLabel.text = self.KDataArray[indexPath.row];
-    return nil;
+    return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -120,25 +123,42 @@ static SelectListView *_singleton = nil ;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    NSString *str = self.KDataArray[indexPath.row];
+    if (self.selectObj) {
+        self.selectObj(str);
+    }
+    self.hidden = YES;
 }
 
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    [self updataTableViewDataWithString:searchText];
+}
 
--(UITextField *)tfView{
-    if (!_tfView) {
-        _tfView = [[UITextField alloc] init];
-        _tfView.backgroundColor = [UIColor orangeColor];
+- (UISearchBar *)searchBarView{
+    if (!_searchBarView) {
+        _searchBarView = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+        _searchBarView.placeholder = @"搜索内容";
+//        _searchBarView.backgroundImage = [UIImage imageNamed:@"clearImage"];
+        _searchBarView.delegate = self;
+        //光标颜色
+//        _searchBarView.tintColor = UIColorFromRGB(0x595959);
+        UITextField *searchTextField = [_searchBarView valueForKey:@"_searchField"];
+        searchTextField.font = [UIFont systemFontOfSize:15];
+        searchTextField.textColor = [UIColor blackColor];
+        //输入框背景颜色
+//        searchTextField.backgroundColor = [UIColor redColor];
     }
-    _tfView.frame = CGRectMake(10, 2, self.itemWidth - 20, self.itemHeight - 4);
-    return _tfView;
+    return _searchBarView;
 }
 
 -(UITableView *)tbView{
     if (!_tbView) {
         _tbView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        _tbView.backgroundColor = [UIColor blueColor];
+        _tbView.backgroundColor = [UIColor clearColor];
+        _tbView.delegate = self;
+        _tbView.dataSource = self;
+        _tbView.tableHeaderView = self.searchBarView;
     }
-//    _tbView.frame = CGRectMake(0, self.itemHeight, self.itemWidth, self.itemHeight * 10);
     return _tbView;
 }
 

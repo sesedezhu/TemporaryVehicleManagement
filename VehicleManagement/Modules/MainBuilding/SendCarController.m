@@ -10,7 +10,9 @@
 #import "SelectListView.h"
 
 @interface SendCarController ()
-
+{
+    UIButton *_selectBtn;
+}
 
 - (IBAction)btnsAction:(UIButton *)sender;
 
@@ -41,13 +43,20 @@
 }
 */
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if (_selectBtn) {
+        [[SelectListView shareInstance] viewHiddenWithBtn:_selectBtn];
+        _selectBtn = nil;
+    }
+}
+
 - (IBAction)btnsAction:(UIButton *)sender {
-    
-//    SelectListView *view = [[[NSBundle mainBundle] loadNibNamed:@"SelectListView" owner:self options:nil] lastObject];
-    
-    
-//    SelectListView *slView = [[SelectListView alloc] initWithFrame:];
-//    [slView updataUIWith:sender];
-    [[SelectListView shareInstance] updataUIWith:sender];
+    NSArray *array = @[@"三亚",@"三海1",@"海33",@"三海44",@"三海444",@"海776",@"海23",@"海8785",@"海",@"海南",@"海贝",@"海哈",@"万dd",@"三海",@"名密码",@"亚海",@"三海亚亚",@"三南海",@"海科科"];
+    _selectBtn = sender;
+    SelectListView *sView = [SelectListView shareInstance];
+    [sView updataUIWithBtn:sender withDataArray:array];
+    sView.selectObj = ^(NSString *string) {
+        [sender setTitle:string forState:UIControlStateNormal];
+    };
 }
 @end
