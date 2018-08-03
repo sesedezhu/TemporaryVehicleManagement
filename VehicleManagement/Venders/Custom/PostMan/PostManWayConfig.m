@@ -13,6 +13,8 @@ static PostManWayConfig *_config;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _config = [PostManWayConfig new];
+        _config.timeoutInterval = 30;
+        _config.configPath = RequestPrefix
         _config.rootParameters = [UserInfoSkills getUserInfo:UserInfoSkillsType_Token];
         _config.accessType = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/plain",@"text/html", nil];
     });

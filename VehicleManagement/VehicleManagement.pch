@@ -1,13 +1,14 @@
 //
-//  CamperPCH.pch
-//  Camper
+//  VehicleManagement.pch
+//  VehicleManagement
 //
-//  Created by liu on 16/9/16.
-//  Copyright © 2016年 ning. All rights reserved.
+//  Created by ZQWFMac on 2018/8/3.
+//  Copyright © 2018年 ZQWFMac. All rights reserved.
 //
 
-#ifndef CamperPCH_pch
-#define CamperPCH_pch
+#ifndef VehicleManagement_pch
+#define VehicleManagement_pch
+
 
 #ifdef __OBJC__
 
@@ -35,26 +36,6 @@
 #endif
 
 
-#pragma 登录地址
-///测试环境
-#define PostManTypeTest       @"http://192.168.101.115/houseTaxiAppServer";
-//#define PostManTypeTest       @"http://192.168.101.115//houseTaxiAppServer";//高露
-//#define PostManTypeTest       @"http://192.168.101.136:8080/houseTaxiAppServer";
-//#define PostManTypeTest       @"http://192.168.101.189:8081/houseTaxiAppServer";
-//#define PostManTypeTest       @"http://192.168.101.168:9080/houseTaxiAppServer";//智博
-//#define PostManTypeTest       @"http://192.168.101.109:8081/houseTaxiAppServer";
-//#define PostManTypeTest        @"http://192.168.101.133:8090/houseTaxiAppServer";//旺
-
-///开发环境
-#define PostManTypeDev          @"http://192.168.101.121:9082/houseTaxiAppService";//192.168.101.121AdministratorNaliwan2017$
-
-///正式环境
-#define PostManTypeReleaseWF    @"http://121.43.38.86:8080/houseTaxi";//老平台
-#define PostManTypeReleaseNLW   @"http://112.74.165.118:9082/houseTaxiService";//新平台
-
-//融云
-#define RONGYUNAPIKEY @"lmxuhwagl028d"
-
 //百度推送
 #define BDPUSHAPIKEY  @"AtjOeaMY0s5jFcslVGHgfoFc"
 
@@ -70,5 +51,4 @@
 //以750为设计稿--原始高度为667
 #define CONVER_VALUE(x) ceil(kScreenWidth * x / 375)
 
-#endif
-
+#endif /* VehicleManagement_pch */

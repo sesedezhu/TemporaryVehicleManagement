@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		106B84E22111526000D96F46 /* MessageHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B84DE2111526000D96F46 /* MessageHeadView.m */; };
 		106B84E32111526000D96F46 /* MessageCityChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B84DF2111526000D96F46 /* MessageCityChooseView.m */; };
+		810AEDB52113EF20007850B1 /* PostManNormalWithRootParematers.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AEDAC2113EF20007850B1 /* PostManNormalWithRootParematers.m */; };
+		810AEDB62113EF20007850B1 /* PostManNormalWithNORootParematers.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AEDAD2113EF20007850B1 /* PostManNormalWithNORootParematers.m */; };
+		810AEDB72113EF20007850B1 /* PostManNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AEDAE2113EF20007850B1 /* PostManNormal.m */; };
+		810AEDB82113EF20007850B1 /* PostManWayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AEDB02113EF20007850B1 /* PostManWayConfig.m */; };
+		810AEDB92113EF20007850B1 /* PostManWithChainedConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AEDB42113EF20007850B1 /* PostManWithChainedConnect.m */; };
 		8137D2EE210B0D6F0038CDA6 /* SendCarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8137D2EC210B0D6F0038CDA6 /* SendCarController.m */; };
 		8137D2EF210B0D6F0038CDA6 /* SendCarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8137D2ED210B0D6F0038CDA6 /* SendCarController.xib */; };
 		8137D2F5210B131D0038CDA6 /* SelectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8137D2F4210B131D0038CDA6 /* SelectListView.m */; };
@@ -43,12 +48,6 @@
 		816647A5210871B500D65487 /* LNMBProgressHUDSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647A1210871B500D65487 /* LNMBProgressHUDSkill.m */; };
 		816647A6210871B500D65487 /* MBProgressHUD+LNMBProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647A4210871B500D65487 /* MBProgressHUD+LNMBProgress.m */; };
 		816647AB2108721200D65487 /* UserInfoSkills.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647AA2108721200D65487 /* UserInfoSkills.m */; };
-		816647BA2108722500D65487 /* AppDelegate+PostManSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647AF2108722500D65487 /* AppDelegate+PostManSkill.m */; };
-		816647BB2108722500D65487 /* PostManNormalWithRootParematers.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647B12108722500D65487 /* PostManNormalWithRootParematers.m */; };
-		816647BC2108722500D65487 /* PostManNormalWithNORootParematers.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647B22108722500D65487 /* PostManNormalWithNORootParematers.m */; };
-		816647BD2108722500D65487 /* PostManNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647B32108722500D65487 /* PostManNormal.m */; };
-		816647BE2108722500D65487 /* PostManWayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647B52108722500D65487 /* PostManWayConfig.m */; };
-		816647BF2108722500D65487 /* PostManWithChainedConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647B92108722500D65487 /* PostManWithChainedConnect.m */; };
 		816647E42108725200D65487 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647C22108725200D65487 /* UIProgressView+AFNetworking.m */; };
 		816647E52108725200D65487 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647C42108725200D65487 /* UIRefreshControl+AFNetworking.m */; };
 		816647E62108725200D65487 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 816647C72108725200D65487 /* AFNetworkActivityIndicatorManager.m */; };
@@ -147,6 +146,17 @@
 		106B84DF2111526000D96F46 /* MessageCityChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCityChooseView.m; sourceTree = "<group>"; };
 		106B84E02111526000D96F46 /* MessageHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHeadView.h; sourceTree = "<group>"; };
 		106B84E12111526000D96F46 /* MessageCityChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCityChooseView.h; sourceTree = "<group>"; };
+		810AEDA92113EC63007850B1 /* VehicleManagement.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleManagement.pch; sourceTree = "<group>"; };
+		810AEDAB2113EF20007850B1 /* PostManWayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManWayConfig.h; sourceTree = "<group>"; };
+		810AEDAC2113EF20007850B1 /* PostManNormalWithRootParematers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormalWithRootParematers.m; sourceTree = "<group>"; };
+		810AEDAD2113EF20007850B1 /* PostManNormalWithNORootParematers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormalWithNORootParematers.m; sourceTree = "<group>"; };
+		810AEDAE2113EF20007850B1 /* PostManNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormal.m; sourceTree = "<group>"; };
+		810AEDAF2113EF20007850B1 /* PostManWithChainedConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManWithChainedConnect.h; sourceTree = "<group>"; };
+		810AEDB02113EF20007850B1 /* PostManWayConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManWayConfig.m; sourceTree = "<group>"; };
+		810AEDB12113EF20007850B1 /* PostManNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormal.h; sourceTree = "<group>"; };
+		810AEDB22113EF20007850B1 /* PostManNormalWithRootParematers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormalWithRootParematers.h; sourceTree = "<group>"; };
+		810AEDB32113EF20007850B1 /* PostManNormalWithNORootParematers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormalWithNORootParematers.h; sourceTree = "<group>"; };
+		810AEDB42113EF20007850B1 /* PostManWithChainedConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManWithChainedConnect.m; sourceTree = "<group>"; };
 		8137D2EB210B0D6F0038CDA6 /* SendCarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendCarController.h; sourceTree = "<group>"; };
 		8137D2EC210B0D6F0038CDA6 /* SendCarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendCarController.m; sourceTree = "<group>"; };
 		8137D2ED210B0D6F0038CDA6 /* SendCarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendCarController.xib; sourceTree = "<group>"; };
@@ -202,7 +212,6 @@
 		8166478B21086F9B00D65487 /* NSDate+LNCustomSkills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LNCustomSkills.m"; sourceTree = "<group>"; };
 		8166478C21086F9B00D65487 /* UIViewController+LNCustomSkills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LNCustomSkills.h"; sourceTree = "<group>"; };
 		8166478D21086F9B00D65487 /* NSString+LNCustomSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LNCustomSkill.h"; sourceTree = "<group>"; };
-		8166479621086FF700D65487 /* CamperDriverPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamperDriverPCH.pch; sourceTree = "<group>"; };
 		8166479721086FFF00D65487 /* CacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheTool.m; sourceTree = "<group>"; };
 		8166479821086FFF00D65487 /* CacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheTool.h; sourceTree = "<group>"; };
 		8166479A2108701400D65487 /* WorldPathConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldPathConfigure.h; sourceTree = "<group>"; };
@@ -215,18 +224,6 @@
 		816647A4210871B500D65487 /* MBProgressHUD+LNMBProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LNMBProgress.m"; sourceTree = "<group>"; };
 		816647A92108721200D65487 /* UserInfoSkills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoSkills.h; sourceTree = "<group>"; };
 		816647AA2108721200D65487 /* UserInfoSkills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoSkills.m; sourceTree = "<group>"; };
-		816647AE2108722500D65487 /* AppDelegate+PostManSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PostManSkill.h"; sourceTree = "<group>"; };
-		816647AF2108722500D65487 /* AppDelegate+PostManSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PostManSkill.m"; sourceTree = "<group>"; };
-		816647B02108722500D65487 /* PostManWayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManWayConfig.h; sourceTree = "<group>"; };
-		816647B12108722500D65487 /* PostManNormalWithRootParematers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormalWithRootParematers.m; sourceTree = "<group>"; };
-		816647B22108722500D65487 /* PostManNormalWithNORootParematers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormalWithNORootParematers.m; sourceTree = "<group>"; };
-		816647B32108722500D65487 /* PostManNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManNormal.m; sourceTree = "<group>"; };
-		816647B42108722500D65487 /* PostManWithChainedConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManWithChainedConnect.h; sourceTree = "<group>"; };
-		816647B52108722500D65487 /* PostManWayConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManWayConfig.m; sourceTree = "<group>"; };
-		816647B62108722500D65487 /* PostManNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormal.h; sourceTree = "<group>"; };
-		816647B72108722500D65487 /* PostManNormalWithRootParematers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormalWithRootParematers.h; sourceTree = "<group>"; };
-		816647B82108722500D65487 /* PostManNormalWithNORootParematers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostManNormalWithNORootParematers.h; sourceTree = "<group>"; };
-		816647B92108722500D65487 /* PostManWithChainedConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostManWithChainedConnect.m; sourceTree = "<group>"; };
 		816647C22108725200D65487 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		816647C32108725200D65487 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		816647C42108725200D65487 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
@@ -410,6 +407,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810AEDAA2113EF20007850B1 /* PostMan */ = {
+			isa = PBXGroup;
+			children = (
+				810AEDB12113EF20007850B1 /* PostManNormal.h */,
+				810AEDAE2113EF20007850B1 /* PostManNormal.m */,
+				810AEDAB2113EF20007850B1 /* PostManWayConfig.h */,
+				810AEDB02113EF20007850B1 /* PostManWayConfig.m */,
+				810AEDAC2113EF20007850B1 /* PostManNormalWithRootParematers.m */,
+				810AEDAD2113EF20007850B1 /* PostManNormalWithNORootParematers.m */,
+				810AEDAF2113EF20007850B1 /* PostManWithChainedConnect.h */,
+				810AEDB22113EF20007850B1 /* PostManNormalWithRootParematers.h */,
+				810AEDB32113EF20007850B1 /* PostManNormalWithNORootParematers.h */,
+				810AEDB42113EF20007850B1 /* PostManWithChainedConnect.m */,
+			);
+			path = PostMan;
+			sourceTree = "<group>";
+		};
 		8166470921086CBD00D65487 = {
 			isa = PBXGroup;
 			children = (
@@ -433,7 +447,7 @@
 		8166471421086CBD00D65487 /* VehicleManagement */ = {
 			isa = PBXGroup;
 			children = (
-				8166479621086FF700D65487 /* CamperDriverPCH.pch */,
+				810AEDA92113EC63007850B1 /* VehicleManagement.pch */,
 				8166479A2108701400D65487 /* WorldPathConfigure.h */,
 				8166474721086CD900D65487 /* AppDelegate */,
 				8166474921086CD900D65487 /* Modules */,
@@ -700,37 +714,10 @@
 		816647A7210871DF00D65487 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				816647AC2108722500D65487 /* PostMan */,
+				810AEDAA2113EF20007850B1 /* PostMan */,
 				816647A0210871B500D65487 /* LNMBProgressHUD */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		816647AC2108722500D65487 /* PostMan */ = {
-			isa = PBXGroup;
-			children = (
-				816647AD2108722500D65487 /* PostManSkills */,
-				816647B02108722500D65487 /* PostManWayConfig.h */,
-				816647B12108722500D65487 /* PostManNormalWithRootParematers.m */,
-				816647B22108722500D65487 /* PostManNormalWithNORootParematers.m */,
-				816647B32108722500D65487 /* PostManNormal.m */,
-				816647B42108722500D65487 /* PostManWithChainedConnect.h */,
-				816647B52108722500D65487 /* PostManWayConfig.m */,
-				816647B62108722500D65487 /* PostManNormal.h */,
-				816647B72108722500D65487 /* PostManNormalWithRootParematers.h */,
-				816647B82108722500D65487 /* PostManNormalWithNORootParematers.h */,
-				816647B92108722500D65487 /* PostManWithChainedConnect.m */,
-			);
-			path = PostMan;
-			sourceTree = "<group>";
-		};
-		816647AD2108722500D65487 /* PostManSkills */ = {
-			isa = PBXGroup;
-			children = (
-				816647AE2108722500D65487 /* AppDelegate+PostManSkill.h */,
-				816647AF2108722500D65487 /* AppDelegate+PostManSkill.m */,
-			);
-			path = PostManSkills;
 			sourceTree = "<group>";
 		};
 		816647C02108725200D65487 /* AFNetwork3.1.0 */ = {
@@ -1166,7 +1153,6 @@
 				816647A5210871B500D65487 /* LNMBProgressHUDSkill.m in Sources */,
 				8166485B2108727300D65487 /* MASConstraint.m in Sources */,
 				8166488B2108727700D65487 /* UIImage+GIF.m in Sources */,
-				816647BD2108722500D65487 /* PostManNormal.m in Sources */,
 				816647EB2108725200D65487 /* AFAutoPurgingImageCache.m in Sources */,
 				816648892108727700D65487 /* UIImageView+HighlightedWebCache.m in Sources */,
 				8166482B2108726400D65487 /* UIView+MJExtension.m in Sources */,
@@ -1184,15 +1170,16 @@
 				8166482C2108726400D65487 /* MJRefreshBackGifFooter.m in Sources */,
 				8166482D2108726400D65487 /* MJRefreshBackStateFooter.m in Sources */,
 				816647ED2108725200D65487 /* AFURLResponseSerialization.m in Sources */,
-				816647BF2108722500D65487 /* PostManWithChainedConnect.m in Sources */,
 				816648942108727700D65487 /* UIButton+WebCache.m in Sources */,
 				816647E42108725200D65487 /* UIProgressView+AFNetworking.m in Sources */,
+				810AEDB62113EF20007850B1 /* PostManNormalWithNORootParematers.m in Sources */,
 				8166476A21086E7300D65487 /* LoginNetWork.m in Sources */,
 				816648382108726400D65487 /* MJRefreshAutoFooter.m in Sources */,
 				8137D2F5210B131D0038CDA6 /* SelectListView.m in Sources */,
 				8166479521086F9B00D65487 /* NSDate+LNCustomSkills.m in Sources */,
 				8166485D2108727300D65487 /* MASViewAttribute.m in Sources */,
 				816647E82108725200D65487 /* UIButton+AFNetworking.m in Sources */,
+				810AEDB52113EF20007850B1 /* PostManNormalWithRootParematers.m in Sources */,
 				816648A0210874BF00D65487 /* MessageListNetWork.m in Sources */,
 				816648292108726400D65487 /* UIScrollView+MJExtension.m in Sources */,
 				8166478F21086F9B00D65487 /* NSString+LNCustomSkill.m in Sources */,
@@ -1201,6 +1188,7 @@
 				8166479321086F9B00D65487 /* UIViewController+LNCustomSkills.m in Sources */,
 				8166476921086E7300D65487 /* LoginBuilding.m in Sources */,
 				816647F62108725D00D65487 /* MBProgressHUD.m in Sources */,
+				810AEDB92113EF20007850B1 /* PostManWithChainedConnect.m in Sources */,
 				816647F02108725200D65487 /* AFURLRequestSerialization.m in Sources */,
 				8166472521086CBF00D65487 /* main.m in Sources */,
 				8166478E21086F9B00D65487 /* UIView+LNCustomeMethodSkill.m in Sources */,
@@ -1213,6 +1201,7 @@
 				816648362108726400D65487 /* MJRefreshHeader.m in Sources */,
 				816648562108727300D65487 /* MASCompositeConstraint.m in Sources */,
 				816648902108727700D65487 /* SDWebImageDownloaderOperation.m in Sources */,
+				810AEDB72113EF20007850B1 /* PostManNormal.m in Sources */,
 				816648372108726400D65487 /* MJRefreshBackFooter.m in Sources */,
 				816647EA2108725200D65487 /* UIWebView+AFNetworking.m in Sources */,
 				816648A82108773800D65487 /* LNBuildingAlertController.m in Sources */,
@@ -1220,15 +1209,13 @@
 				8166479221086F9B00D65487 /* UIBarItem+LNCustomeSkill.m in Sources */,
 				816648392108726400D65487 /* MJRefreshComponent.m in Sources */,
 				816648A1210874BF00D65487 /* MessageCountLabel.m in Sources */,
+				810AEDB82113EF20007850B1 /* PostManWayConfig.m in Sources */,
 				816647A6210871B500D65487 /* MBProgressHUD+LNMBProgress.m in Sources */,
-				816647BC2108722500D65487 /* PostManNormalWithNORootParematers.m in Sources */,
 				816648872108727700D65487 /* SDWebImageManager.m in Sources */,
 				8166488D2108727700D65487 /* SDWebImageCompat.m in Sources */,
 				816648AB2108776C00D65487 /* SimpleEnterBuilding.m in Sources */,
 				816648582108727300D65487 /* MASLayoutConstraint.m in Sources */,
 				816647EC2108725200D65487 /* AFImageDownloader.m in Sources */,
-				816647BA2108722500D65487 /* AppDelegate+PostManSkill.m in Sources */,
-				816647BE2108722500D65487 /* PostManWayConfig.m in Sources */,
 				816648342108726400D65487 /* MJRefreshGifHeader.m in Sources */,
 				8166488A2108727700D65487 /* SDWebImageDownloader.m in Sources */,
 				816648572108727300D65487 /* MASConstraintMaker.m in Sources */,
@@ -1243,7 +1230,6 @@
 				816648552108727300D65487 /* ViewController+MASAdditions.m in Sources */,
 				8166477421086E8800D65487 /* UserInfoBuilding.m in Sources */,
 				816648332108726400D65487 /* MJRefreshStateHeader.m in Sources */,
-				816647BB2108722500D65487 /* PostManNormalWithRootParematers.m in Sources */,
 				8166477921086E9000D65487 /* SettingBuilding.m in Sources */,
 				816648882108727700D65487 /* SDWebImageDecoder.m in Sources */,
 				8166488F2108727700D65487 /* SDImageCache.m in Sources */,
@@ -1411,7 +1397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleManagement/CamperDriverPCH.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleManagement/VehicleManagement.pch";
 				INFOPLIST_FILE = VehicleManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1430,7 +1416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleManagement/CamperDriverPCH.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleManagement/VehicleManagement.pch";
 				INFOPLIST_FILE = VehicleManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+PostManSkill.h"
 #import "MainBuildingContainer.h"
 #import "UserInfoSkills.h"
 
@@ -20,10 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    //    [self configurePostManWithType:PostManType_Test];
-    //    [self configurePostManWithType:PostManType_Dev];
-    [self configurePostManWithType:PostManType_Release];
     
     NSString *phone = [UserInfoSkills getUserInfo:UserInfoSkillsType_Phone];
     NSString *password = [UserInfoSkills getUserInfo:UserInfoSkillsType_Password];
