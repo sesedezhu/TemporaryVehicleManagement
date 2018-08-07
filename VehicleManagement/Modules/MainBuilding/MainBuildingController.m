@@ -81,6 +81,7 @@
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [self.view endEditing:YES];
+    self.navigationController.navigationBar.hidden = NO;
 }
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
